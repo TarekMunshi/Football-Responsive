@@ -101,10 +101,6 @@ header{
     grid-column-gap: 30px;
     grid-row-gap: 27px;
 }
-.product-details h2{
-    margin-top: 0px;
-    margin-bottom: 55px;
-}
 .zone-text{
     margin-left: 50px;
     font-size: 40px;
