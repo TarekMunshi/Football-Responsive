@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /*fonts link*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+/* heading css start */
+header{
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+.heading-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-half-width{
+    margin: 207px 0px 240px 156px;
+}
+.first-half-width button{
+    border: none;
+    background-image: linear-gradient( 90deg, rgb(243, 80, 51), tomato);
+    padding: 10px 24px;
+    cursor: pointer;
+}
+.first-half-width button:hover{
+    background-image: linear-gradient(90deg, tomato, rgb(243, 80, 51 ));
+}
+.first-half-width a{
+    text-decoration: none;
+    color: white;
+}
+.first-half-width h1{
+    font-size: 64px;
+    margin: 0px;
+    color: white;
+    margin-bottom: 27px;
+}
+.arrow{
+    transition: transform 0.5s ease-in; 
+}
+.first-half-width button:hover .arrow{
+    transform: rotate(90deg);
+}
+
+.second-half-width img{
+    width: 556px;
+    height: 438px;
+}
+.second-half-width{
+    margin: 153px 140px 86px 102px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+.second-half-width:hover{
+    transform: scale(1.1, 1.1);
+}
+/* heading css end */
+
+/* players card css start */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 132px;
+}
+.players-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player-info, .product-card{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px lightgray;
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+.player-details, .product-detalis{
+    width: 300px;
+    padding-bottom: 18px;
+}
+.player-details h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.player-details p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgba(108, 108, 108, 1);
+}
+/* players card css end */
+
+/* shopping zone css start */
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.product-details h2{
+    margin-top: 0px;
+    margin-bottom: 55px;
+}
+.zone-text{
+    margin-left: 50px;
+    font-size: 40px;
+    color: #2D25A0;
+}
+.product-img img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+.product-shipping{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-shipping span{
+    color: gray;
+    font-size: 30px;
+}
+.product-btn a{
+    background-image: linear-gradient( 90deg, lightsalmon, salmon);
+    padding: 10px 24px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.product-btn a:hover{
+    background-image: linear-gradient(90deg, salmon, lightsalmon);
+}
+/* shopping zone css end */
+
+/* creators sign up css start */
+.creators-bg{
+    background-color: yellow;
+}
+.creators-club{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.creators-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.creators-signup a{
+    text-decoration: none;
+    color: white;
+}
+.creators-signup{
+    padding: 10px 30px;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+/* creators sign up css start */
+
+/* footer css start */
+footer{
+    margin-top: 158px;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 484px;
+    height: 110px;
+}
+.icon{
+   font-size: 32px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   
+}
+.icon i{
+    margin-right: 14px;
+    background-color: rgba(211, 211, 211, 0.767);
+    padding: 10px;
+    color: #969BAB;
+    border-radius: 50px;
+}
+.copyright-text{
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* footer css end */
+
+/* media query for mobile css start */
+@media only screen and (min-width: 300px) and (max-width: 767px){
+    .heading-section{
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .first-half-width h1{
+        font-size: 32px;
+    }
+    .first-half-width{
+        margin: 112px 66px 60px 0px;
+    }
+    .second-half-width{
+        margin: 0px 0px 61px 0px;
+    }
+    .second-half-width img{
+        width: 329px;
+        height: 259.17px;
+    }
+    .players-card, .shopping-cart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .zone-text{
+        margin-left: 20px;
+    }
+    .creators-club{
+        flex-direction: column;
+    }
+    .creators-signup{
+        margin-bottom: 30px;
+    }
+    .creators-text{
+        margin-left: 35px;
+    }
+    .logo img{
+        width: 300px;
+        height: 100px;
+    }
+}
+/* media query for mobile css end */
+
+/* media query for Tablet css start */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .heading-section{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first-half-width h1{
+        font-size: 40px;
+    }
+    .second-half-width img{
+        width: 430px;
+        height: 400px;
+       }
+    .players-card, .shopping-cart{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .creators-club{
+        flex-direction: column;
+    }
+    .creators-signup{
+        margin-bottom: 30px;
+    }
+}
+/* media query for Tablet css end */
